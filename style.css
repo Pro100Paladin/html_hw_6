@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     max-width: 1600px;
 }
@@ -13,13 +18,16 @@ body {
 
 .cari {
     display: flex;
-    width: 44px;
-    height: 38px;
+    /* width: 44px; */
+    height: 4vw;
     gap: 2vw;
 }
 
 .menu {
     height: 29px;
+}
+.img_menu{
+    width: 18vw;
 }
 
 .Background {
@@ -79,6 +87,7 @@ body {
 .position_upper_block {
     display: grid;
     place-items: center;
+    position: relative;
 }
 
 .images_upper_block {
@@ -111,11 +120,11 @@ body {
     line-height: normal;
 }
 
-.position_upper_block {
+/* .position_upper_block {
     position: relative;
-}
+} */
 
-.product{
+.product {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -145,38 +154,156 @@ body {
     line-height: normal;
 }
 
-.footer_product{
+.footer_product {
+    display: grid;
+    grid-template-columns: repeat(3, 19.7vw);
+    margin-top: 48px;
+    -webkit-box-pack: center;
+    justify-content: center;
+    gap: 30px;
+
+
+}
+
+.Background_images {
+    display: block;
+    margin: auto;
+    height: 23.2vw;
+
+}
+
+.top_product {
+    background: #F8F8F8;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: start;
+    align-items: flex-start;
+    gap: 0vw;
+}
+
+.images_product {
+    width: 19.4vw;
+}
+
+.product_hed {
+    color: #000;
+    font-family: Lato;
+    font-size: 1vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 1vw;
+}
+
+.product_text {
+    /* width: 20vw; */
+    color: #5D5D5D;
+    font-family: Lato;
+    font-size: 1vw;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin: 1vw;
+}
+
+.product_price {
+    color: #F16D7F;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 20px;
+}
+
+.class_footer {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
     align-items: center;
-    align-content: center;
-    gap: 2vw;
-    width: 1200px;
-    margin: 70px;
-     
+    margin: 3vw;
 }
-.Background_images{
-    background-color: rgb(255, 243, 245);
-    height: 20vw;
+
+.button_footer {
+    width: 12vw;
+    height: 3vw;
+    flex-shrink: 0;
+    border-color: #FF6A6A;
 }
-.images_product{
-    width: 20vw;
+
+.text_footer {
+    color: #F26376;
+    font-family: Lato;
+    font-size: 1vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
-.product_hed{
-    color: #000;
-font-family: Lato;
-font-size: 1.3vw;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-}
-.product_text{
-    width: 20vw;
-    color: #5D5D5D;
-font-family: Lato;
-font-size: 14px;
-font-style: normal;
-font-weight: 300;
-line-height: normal;
+
+@media(max-width:1023px) {
+    .the_upper_block {
+        display: grid;
+        grid-template-columns: repeat(3, 30vw);
+        justify-content: center;
+        gap: 2vw;
+        margin: 65px;
+    }
+
+    .images_upper_block {
+        width: 30vw;
+    }
+
+    .images_upper_block_2 {
+        grid-column: 1/span4;
+        width: 94vw;
+    }
+
+    .text_upper_block {
+        grid-column: 1/ span4;
+    }
+
+    .footer_product {
+        display: grid;
+        grid-template-columns: repeat(2, 45.5vw);
+        margin-top: 48px;
+        -webkit-box-pack: center;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .images_product {
+        width: 47vw;
+    }
+
+    .Background_images {
+        display: block;
+        margin: auto;
+        height: 47vw;
+    }
+
+    .top_product {
+        background: #F8F8F8;
+        display: flex;
+        width: 47vw;
+        -webkit-box-direction: normal;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        justify-content: center;
+        -webkit-box-align: start;
+        align-items: flex-start;
+        gap: 0vw;
+    }
+
+    .button_footer {
+        width: 26vw;
+        height: 5vw;
+    }
+
+    .text_footer{
+        font-size: 2vw;
+    }
+
 }
