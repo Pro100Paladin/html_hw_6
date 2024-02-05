@@ -1,10 +1,11 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
-    max-width: 1600px;
+    /* max-width: 1600px; */
 }
 
 .navigator {
@@ -26,7 +27,8 @@ body {
 .menu {
     height: 29px;
 }
-.img_menu{
+
+.img_menu {
     width: 18vw;
 }
 
@@ -48,7 +50,7 @@ body {
 .text_Background {
     color: #222;
     /* width: 377px; */
-    font-family: Lato;
+    font-family: 'Roboto', sans-serif;
     font-size: 3vw;
     font-style: normal;
     font-weight: 900;
@@ -58,7 +60,7 @@ body {
 
 .text_Background_colar {
     color: #F16D7F;
-    font-family: Lato;
+    font-family: 'Roboto', sans-serif;
     font-size: 2vw;
     font-style: normal;
     font-weight: 700;
@@ -68,7 +70,7 @@ body {
 
 .text_2_Background {
     color: #222;
-    font-family: Lato;
+    font-family: 'Roboto', sans-serif;
     font-size: 2vw;
     font-style: normal;
     font-weight: 700;
@@ -93,18 +95,19 @@ body {
 .images_upper_block {
     width: 20vw;
     background-image: linear-gradient(rgba(33, 22, 22, 0.70));
-
+    filter: brightness(50%)
 }
 
 .images_upper_block_2 {
     width: 64vw;
+    filter: brightness(50%);
 }
 
 .text_upper_block {
     position: absolute;
     color: #FFF;
     text-align: center;
-    font-family: Lato;
+    font-family: 'Roboto', sans-serif;
     font-size: 1.6vw;
     font-style: normal;
     font-weight: 400;
@@ -113,7 +116,7 @@ body {
 
 .the_upper_block_2 {
     color: #F16D7F;
-    font-family: Lato;
+    font-family: 'Roboto', sans-serif;
     font-size: 2.4vw;
     font-style: normal;
     font-weight: 700;
@@ -136,7 +139,7 @@ body {
     align-items: center;
     flex-direction: column;
     color: #222;
-    font-family: Lato;
+    font-family: 'Roboto', sans-serif;
     font-size: 2.5vw;
     font-style: normal;
     font-weight: 400;
@@ -147,7 +150,7 @@ body {
 
 .paragraph_product {
     color: #9F9F9F;
-    font-family: Lato;
+    font-family: 'Roboto', sans-serif;
     font-size: 1.1vw;
     font-style: normal;
     font-weight: 400;
@@ -191,7 +194,7 @@ body {
 
 .product_hed {
     color: #000;
-    font-family: Lato;
+    font-family: 'Roboto', sans-serif;
     font-size: 1vw;
     font-style: normal;
     font-weight: 400;
@@ -202,7 +205,7 @@ body {
 .product_text {
     /* width: 20vw; */
     color: #5D5D5D;
-    font-family: Lato;
+    font-family: 'Roboto', sans-serif;
     font-size: 1vw;
     font-style: normal;
     font-weight: 300;
@@ -212,7 +215,7 @@ body {
 
 .product_price {
     color: #F16D7F;
-    font-family: Lato;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -242,14 +245,14 @@ body {
 
 .text_footer {
     color: #F26376;
-    font-family: Lato;
+    font-family: 'Roboto', sans-serif;
     font-size: 1vw;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
 
-@media(max-width:1023px) {
+@media(min-width: 768px) and (max-width: 1024px) {
     .the_upper_block {
         display: grid;
         grid-template-columns: repeat(3, 30vw);
@@ -308,8 +311,138 @@ body {
         height: 5vw;
     }
 
-    .text_footer{
+    .text_footer {
         font-size: 2vw;
     }
 
+}
+
+@media(max-width:767px) {
+    .navigator{
+        flex-wrap: wrap;
+    }
+    .cari{
+        height: 50%;
+    }
+    .menu{
+        height: 30%;
+    }
+    .img_menu{
+        width: 90%;
+    }
+    .Background {
+        width: 100vw;
+        height: 100vw;
+        display: flex;
+        align-items: center;
+        background-color: rgb(255, 243, 245);
+        justify-content: center;
+    }
+
+    .images_Background {
+        display: none;
+    }
+
+    .text_Background {
+        font-size: 6vw;
+    }
+
+    .text_Background_colar {
+        font-size: 3.5vw;
+
+    }
+
+    .text_2_Background {
+        font-size: 3.5vw;
+    }
+
+    .icon_Background {
+        width: 1.5vw;
+        margin: 20px;
+    }
+
+    .text_upper_block {
+        font-size: 6vw;
+    }
+
+    .the_upper_block_2 {
+        font-size: 8vw;
+    }
+
+    .position_upper_block {
+        margin: 3vw;
+
+    }
+
+    .images_upper_block {
+        width: 90vw;
+
+    }
+
+    .images_upper_block_2 {
+        width: 90vw;
+        height: 20vw;
+    }
+
+    .heading_product {
+        font-size: 8vw;
+    }
+
+    .paragraph_product {
+        font-size: 3.7vw;
+    }
+
+    .footer_product {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .images_product {
+        width: 90vw;
+    }
+
+    .Background_images {
+        display: block;
+        margin: auto;
+        height: 90vw;
+    }
+
+    .top_product {
+        gap: 0vw;
+        align-items: center;
+    }
+
+    .product_hed {
+        margin: 5vw;
+        font-size: 3.5vw;
+        position: relative;
+        left: -19.5vw;
+        margin-top: 8vw;
+        margin-bottom: 3vw;
+    }
+
+    .product_text {
+        font-size: 3.5vw;
+        margin-left: 5vw;
+        width: 80vw;
+    }
+    .product_price{
+        position: relative;
+        left: -30vw;
+        font-size: 5vw;
+    }
+    .class_footer{
+        
+    }
+    .button_footer{
+        width: 50vw;
+        height: 10vw;
+        margin: 10vw;
+        flex-shrink: 0;
+        border-color: #FF6A6A;
+        background-color: #ffffff;
+    }
+    .text_footer{
+        font-size: 4vw;
+    }
 }
